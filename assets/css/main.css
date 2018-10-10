@@ -1,0 +1,33 @@
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fas:hover,.fab:hover {
+  opacity: 0.7!important;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 1060px;
+}
+
+.pricing-header {
+  }
+
+.card-deck .card {
+  min-width: 220px;
+}
