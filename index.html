@@ -15,23 +15,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal">Эпиграф или имя</h5>
+<body style="padding-top: 70px">
+<div class="fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><a data-scroll href="#">Эпиграф или имя</a></h5>
     <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">О психологе</a>
+        <a data-scroll class="p-2 text-dark" href="#about">О психологе</a>
+        <a data-scroll class="p-2 text-dark" href="#links">Материалы</a>
         <a class="p-2 text-dark" href="#">Консультирование</a>
-        <a class="p-2 text-dark" href="#">О безопасности</a>
-        <a class="p-2 text-dark" href="#">Что-то ещё</a>
+        <a class="p-2 text-dark" href="#safety">О безопасности</a>
     </nav>
     <a class="btn btn-outline-primary" href="#">Задать вопрос</a>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-4" id="main">
     <div class="row">
         <div class="col-md-5">
             <div class="pricing-header mx-auto text-center">
@@ -40,81 +40,153 @@
         </div>
         <div class="col-md-7">
             <div class="pricing-header pb-md-2 mx-auto ">
-                <h2 class="display-5">Токарева Ольга Александровна</h2>
-                <p class="lead">Детский психолог, логопед.</p>
+                <h2 class="display-5">Токарева Ольга</h2>
+                <p class="lead">Психолог для детей, родителей, педагогов</p>
             </div>
-            <ul class="pb-md-2">
-                <li class="">Индивидуальные консультации</li>
-                <li class="">Занятия с детьми</li>
-                <li class="">Пинки под зад</li>
-                <li class="">Осуждение</li>
+            <p>Найдите "своего" психолога:<p/>
+            <ul>
+                <li>Когда душа болит</li>
+                <li>Когда все кончено</li>
+                <li>Когда у вас было всегда или появилось недавно ощущение, что вы ходите по кругу, топчетесь на одних и тех же граблях</li>
+                <li>Когда вообще собственная жизнь не нравится вам категорически, но что сделать, чтобы она понравилась, вы не знаете.</li>
+                <li>Когда у вас дети, неважно, какого возраста, а вы категорически не знаете, как с ними быть.</li>
+                <li>Когда у вас есть родители, но вы проводите с ними очень мало времени или очень много и вас это волнует.</li>
+                <li>Когда надо решить важный жизненный вопрос или выполнить задачу, но отчего-то сделать это никак не получается, а время идет.</li>
             </ul>
-
-            <div>
-                <i style="width: 20px" class="fas fa-1x fa-at"></i>
-                olga@tokareva.me
-            </div>
-            <div>
-                <i style="width: 20px" class="fab fa-1x fa-telegram-plane"></i>
-                <a href="#">Телеграм</a>
-            </div>
-            <div>
-                <i style="width: 20px" class="fab fa-1x fa-vk"></i>
-                <a href="https://vk.com/id195501169">ВКонтакте</a>
-            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <div>
+                        <i style="width: 20px" class="fas fa-1x fa-at"></i>
+                        olga@tokareva.me
+                    </div>
+                </li>
+                <li class="list-inline-item">
+                    <div>
+                        <i style="width: 20px" class="fab fa-1x fa-telegram-plane"></i>
+                        <a href="#">Телеграм</a>
+                    </div>
+                </li>
+                <li class="list-inline-item">
+                    <div>
+                        <div>
+                            <i style="width: 20px" class="fab fa-1x fa-vk"></i>
+                            <a href="https://vk.com/id195501169">ВКонтакте</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
 
-<div class="container mt-5">
-    <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Какие</h4>
+<section style="min-height: 70px" id="about"></section>
+<section class="p-4 bg-light mx-auto text-center">
+    <div class="container">
+    <h2 class="display-5 font-weight-light">О себе</h2>
+    <p class="lead">
+        Меня зовут Токарева Ольга Александровна. Токарева – фамилия, взятая в браке, девичья – Васильченко.
+    </p><hr width="70px">
+    <p class="lead">
+        Я родилась 12 февраля 1976г в г. Новокузнецке и живу там до сих пор. Выросла в снежных морозных зимах и коротких и жарких летних месяцах. Я мама двух дочерей.
+    </p><hr width="70px">
+    <p class="lead">
+        Базовое профессиональное образование получила в 1999 году в НГПИ по специальности дошкольная педагогика и психология. С тех пор психология детства, взросления, семьи – основной профессиональный интерес и стимул к повышению квалификации. Я люблю учиться новому, из последних освоенных материалов – СПИСОК КУРСОВ ЗА 5 ЛЕТ.
+    </p><hr width="70px">
+    <p class="lead">
+        На данный момент я веду исследовательскую работу на тему «Психолого-педагогические условия развития эмоционального интеллекта детей дошкольного возраста с признаками дефицита внимания» на кафедре НАЗВАНИЕ под руководством ФИО, ССЫЛКИ
+    </p><hr width="70px">
+    <p class="lead">
+        Мой опыт профессиональной деятельности в психологии – 19 лет, из них часть – преподавание, работа со студентами, курсантами и часть – практическая работа с клиентами (родителями, детьми, педагогами).
+    </p><hr width="70px">
+    <p class="lead">
+        Сейчас я работаю педагогом-психологом в МБ ДОУ «Детский сад № 226» г. Новокузнецка, также оказываю консультативную помощь родителям и педагогам в МБ ДОУ «132» и 248. Кроме того, принимаю очных клиентов.
+    </p><hr width="70px">
+    <p class="lead">
+        Мой супервизор и личный психолог – Никитина Оксана Анатольевна ССЫЛКА
+    </p><hr width="70px">
+    <p class="lead">
+        Очень люблю читать, лучший для меня жанр – волшебная сказка и фэнтези. Мне по душе знойные летние дни и грозы, тихие снегопады, отдых у воды. Люблю аромат цветущей липы, сирени, молодой листвы, скошенной травы. Ценю долгие пешие и велопрогулки с семьей и друзьями.
+    </p><hr width="70px">
+
+    </div>
+</section>
+
+<section class="" style="min-height: 70px" id="links"></section>
+<section class="p-4 mx-auto text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <a href="#" class="link"><h4>Людям о людях</h4></a>
+                <hr width="30px">
+                Cтатьи и заметки взрослым о детях, детям о взрослых и о том, когда ребенок вырос
             </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+            <div class="col-md-4 text-center">
+                <a href="#" class="link"><h4>Медиатека</h4></a>
+                <hr width="30px">
+                Aудио, видео и арт материалы для души
             </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">То</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-            </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Штуки</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+            <div class="col-md-4 text-center">
+                <a href="#" class="link"><h4>Забавно о важном</h4></a>
+                <hr width="30px">
+                Притчи, легенды, короткие истории, анекдоты о человеке и мире
             </div>
         </div>
     </div>
+</section>
 
+<section class="" style="min-height: 70px" id="safety"></section>
+<section class="bg-light p-4">
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <h4>Не станет ли ещё хуже?</h4>
+                <br>
+                <p align="justify" class="font-weight-light">
+                    Может так случится, но только с вашего личного разрешения, поскольку порой приходится ворошить события, которые тщательно были спрятаны, дабы не причиняли боли. Я считаю, что клиента надо любить (в гуманистическом смысле), оберегать и подставлять вовремя ладошки, чтобы не навернулся.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4>О конфиденциальности</h4>
+                <br>
+                <p align="justify" class="font-weight-light">
+                    Все, что вами будет сказано, я забуду сразу, как закончится консультация, а вспомню только тогда, когда вы придете ко мне в следующий раз. И рассказывать никому не буду, и на компьютере у меня переписку никто не увидит.
+                </p>
+            </div>
+        </div>
+        <hr width="70px">
+        <div class="row justify-content-end mt-2">
+            <div class="col-md-8">
+                <h4>Границы в работе</h4>
+                <p align="justify" class="font-weight-light">
+                    Личные границы проходят на расстоянии вытянутой руки или фокуса зрения. Интимные границы проходят на расстоянии локтя.
+
+                    Все, что входит в ваши личные и интимные границы, мы обсуждаем только с вашего разрешения. То, что входит в личные границы других людей, мы не обсуждаем: это называется «сплетничать».
+
+                    Если вам захочется перейти в мои личные границы, я вам покажу, где они проходят, и почему туда вам нельзя.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4>Личные отношения</h4>
+                <p align="justify" class="font-weight-light">
+                    С клиентами нельзя дружить и спать, это негигиенично и неэкологично. Для этих целей и у вас, и у меня есть другие люди. Если вам кажется, что ваш психолог влюбил вас в себя, то это вы сами влюбились в психолога, и обсуждать надо тему возвращения каждому ответственности за свой выбор.
+                </p>
+            </div>
+        </div>
+        <hr width="70px">
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <h4>К вопросу о том, как это работает</h4>
+                <p align="justify" class="font-weight-light">
+                    Что касается специфики работы, то ее нет. Вы обращаетесь к психологу Ольге Токаревой, а не к врачу, волшебнику или шаману, и методы подбираются психологом для вас, а не вы обязаны выбирать тот или иной метод.
+
+                    Какие методы мы выберем — в ходе работы будет ясно. Нужна музыка – будет музыка, надо строить и рушить – найдем, из чего, нужно поковыряться в проблемах из детства – значит, будет так.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-5">
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
             <div class="col-12 col-md">
@@ -154,21 +226,14 @@
     </footer>
 </div>
 
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="lib/js/popper.min.js"></script>
 <script src="lib/js/bootstrap.min.js"></script>
-<script src="lib/js/holder.min.js"></script>
 <script>
-    Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-    });
+    var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 </body>
 </html>
