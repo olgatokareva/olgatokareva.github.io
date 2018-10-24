@@ -1,16 +1,9 @@
-/* Add a hover effect if you want */
 .fas:hover,.fab:hover {
   opacity: 0.7!important;
 }
 
 .container {
   max-width: 960px;
-}
-
-hr {
-  border : 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .link {
