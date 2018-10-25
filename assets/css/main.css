@@ -7,6 +7,18 @@
 }
 
 .link {
-  color: #004085;
   text-decoration: none!important;
+}
+
+.my-blue-background {
+  background-color: #004085!important;
+}
+
+.my-blue-text {
+  color: #004085!important;
+}
+
+.my-navbar {
+  padding-top: 0;
+  padding-bottom: 0;
 }
