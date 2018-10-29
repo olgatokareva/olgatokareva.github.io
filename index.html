@@ -22,8 +22,36 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/index.css" rel="stylesheet">
 </head>
-
 <body style="padding-top: 70px">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter50916002 = new Ya.Metrika2({
+                    id:50916002,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50916002" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <nav class="navbar navbar-expand-lg px-md-4 mb-3 navbar-light bg-white fixed-top border-bottom shadow-sm my-navbar">
     <a class="navbar-brand" href="#">
         <img src="assets/images/psychological-icon.png" width="70" height="70" class="d-inline-block align-top" alt="">
@@ -130,7 +158,7 @@
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-6">
-                <form class="contact100-form validate-form">
+                <form onsubmit="sendMessage(this)" class="contact100-form validate-form">
 					<span class="contact100-form-title">
 						Свяжитесь с психологом
 					</span>
@@ -291,7 +319,10 @@
         </div>
     </footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 <script src="lib/js/bootstrap.min.js"></script>
 <script src="lib/js/select2.min.js"></script>
 <script src="lib/js/tilt.jquery.min.js"></script>
@@ -309,6 +340,7 @@
     });
 </script>
 <script src="lib/js/form.js"></script>
+<script src="assets/js/index.js"></script>
 <script>
     var scroll = new SmoothScroll('a[href*="#"]');
 </script>
